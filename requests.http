@@ -1,0 +1,80 @@
+
+### POST create-checkout-session
+POST http://localhost:4242/stripe/create-checkout-session
+Content-Type: application/json
+
+### Exemplu POST cu JSON
+GET http://localhost:4242/stripe/checkout-session
+Content-Type: application/json
+
+{
+  "title": "hello",
+  "body": "world",
+  "userId": 1
+}
+
+###
+
+
+
+
+
+
+
+### Exemplu POST cu JSON
+POST http://localhost:4242/stripe/webhooks
+Content-Type: application/json
+
+{
+  "title": "hello",
+  "body": "world",
+  "userId": 1
+}
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Exemplu PUT (update resursa)
+PUT https://jsonplaceholder.typicode.com/posts/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "updated title",
+  "body": "updated content",
+  "userId": 1
+}
+
+###
+
+### Exemplu DELETE
+DELETE https://jsonplaceholder.typicode.com/posts/1
+
+###
+
+### Exemplu cu variabilă (baseUrl)
+@baseUrl = https://jsonplaceholder.typicode.com
+
+GET {{baseUrl}}/comments/1
+
+###
+
+### Exemplu cu header custom
+GET {{baseUrl}}/posts/2
+Authorization: Bearer myFakeToken123
